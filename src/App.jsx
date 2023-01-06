@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route} from 'react-router-dom'
 import Home from './components/home/Home';
 import Login from "./components/login/Login";
+import Registration from "./components/login/Registration";
 import OrganizationSpeece from "./components/OrganizationSpeece/OrganizationSpeece";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/speece" element={<OrganizationSpeece/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/registration" element={<Registration/>} />
        </Routes>
     </>
   )

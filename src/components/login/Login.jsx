@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../home/Footer';
 import NavBar from '../home/NavBar';
 
@@ -43,7 +44,7 @@ const Login = () => {
 						<div className="flex justify-between mt-4">
 							<p className="text-sm">
 								If you have no account!
-								<span className="text-green-700 font-semibold cursor-pointer ml-1 text-base"><a href="./registration.html">Please Registration</a></span> 
+								<span className="text-green-700 font-semibold cursor-pointer ml-1 text-base"><Link to="/registration">Please Registration</Link></span> 
 							</p>
 							<div className="text-green-700 font-semibold cursor-pointer"><a href="#">Reset password</a></div> 
 						</div>
