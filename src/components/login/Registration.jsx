@@ -7,16 +7,16 @@ const Registration = () => {
   return (
     <div>
     <NavBar/>
-      <section className="container pt-[6rem] pb-[2.8rem] mx-auto px-4 lg:px-14">
+      <section className="pt-[6rem] pb-[2.8rem]  mx-auto lg:px-14">
         <section className="body-font w-full flex items-center justify-center">
-          <div className="bg-green-100 text-gray-600 w-6/12 rounded-lg py-4">
-            <div className="flex flex-col items-center justify-center gap-2">
+          <div className="bg-green-100  text-gray-600 lg:w-6/12 rounded-lg py-4">
+            <div className="flex flex-col  items-center justify-center gap-2">
               <p className="text-2xl font-bold text-green-700">Registration</p>
             </div>
-            <div className="mt-3 w-full px-6 py-2">
-              <div className="w-full">
-                <div className="flex items-center mt-5">
-                  <div className="flex w-full border border-gray-300 rounded-md">
+            <div className="mt-3 w-full  px-8 py-2">
+              <div className="w-full  ">
+                <div className="flex mx-8 items-center  mt-5">
+                  <div className="flex w-full border  border-gray-300  rounded-md">
                     <button className="flex items-center justify-center required px-5 py-1 border-r">
                       <div className="font-semibold text-center text-gray-400">
                         <i className="fas fa-phone-alt pt-3 text-xl"></i>
@@ -24,7 +24,7 @@ const Registration = () => {
                     </button>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-md text-gray-700 focus:outline-blue-400 text-lg focus:rounded-none placeholder:text-gray-500"
+                      className="w-full  px-4 py-3 rounded-md text-gray-700 focus:outline-blue-400 text-lg focus:rounded-none placeholder:text-gray-500"
                       placeholder="Enter your mobile number"
                     />
                   </div>

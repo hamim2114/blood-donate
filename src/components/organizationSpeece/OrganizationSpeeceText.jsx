@@ -28,7 +28,7 @@ const OrganizationSpeeceText = () => {
 			 {/* Chairman's Speece end  */}
 
 			 {/* Other speech start  */}
-			<div className="flex gap-4 w-full">
+			<div className="md:flex gap-4 w-full">
 				<div className="w-full overflow-x-auto">
 					<table className="text-sm text-left text-gray-500 dark:text-gray-400 border-l w-[100%] border-r">
 						<thead className="text-xs text-white uppercase bg-green-700">

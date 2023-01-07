@@ -8,13 +8,13 @@ const Hero = () => {
         <section className="pt-2" >
 		<div className="container mx-auto">
 			<div className="px-0 lg:px-14 mt-20 w-full mb-2">
-				<div className="flex gap-x-12 items-start">
-					<div className="w-3/12">
+				<div className="md:flex gap-x-12 items-start">
+					<div className="md:w-3/12">
 						<div className="w-full">
 							<img className="object-contain w-full h-[14rem]" src={bloodDonate}/>
 						</div>
 					</div>
-					<div className="border border-gray-200 w-6/12">
+					<div className="border border-gray-200 md:py-0 py-6 mt-8 md:w-6/12">
 						 {/* vedio section start  */}
 						{/* <div className="w-full hidden">
 							<video autoplay="" loop="" controls="" className="h-[17.2rem] w-full object-fit">
@@ -25,7 +25,7 @@ const Hero = () => {
 
 						 {/* image section start  */}
 						<div className="w-full">
-							<img className="object-cover w-full object-center h-[17.2rem]" src={bloodBanner2}/>
+							<img className="object-cover w-full object-center xl:h-[17.2rem]" src={bloodBanner2}/>
 						</div>
 						{/* image section end  */}
 
@@ -58,7 +58,7 @@ const Hero = () => {
 	</section>
 
     {/* visitors start */}
-    <section className="mt-0">
+    <section className="md:mt-0 mt-8">
         <div className="container px-4 lg:px-14 text-white mx-auto">
             <div className="flex justify-between items-center">
                 <div className="rounded-md h-16 w-44 p-4 flex flex-col items-center justify-center bg-yellow-300">

@@ -69,8 +69,8 @@ const Footer = () => {
 		{/* company slider section End */}
 		
 		<div className="lg:mt-0">
-			<div className="container items-center justify-center px-5 py-[14px] mx-auto">
-				<div className="flex items-center w-full mt-7 lg:ml-auto lg:mt-2 gap-x-36 justify-center">
+			<div className="container items-center justify-center md:px-5 py-[14px] mx-auto">
+				<div className="flex items-center w-full mt-7 lg:ml-auto lg:mt-2 md:gap-x-36 gap-x-16 justify-center">
 					<Link to="/" className="hover:text-green-400">Home</Link>
 					<a href="#" className="hover:text-green-400">About</a>
 					<a href="#" className="hover:text-green-400">Privacy Policy</a>

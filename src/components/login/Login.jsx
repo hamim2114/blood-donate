@@ -8,7 +8,7 @@ const Login = () => {
         <>
             <NavBar/>
             <section className="body-font pt-[6rem] pb-[2.8rem] w-full flex items-center justify-center">
-			<div className="bg-green-100 text-gray-600 w-6/12 rounded-lg py-4">
+			<div className="bg-green-100 text-gray-600 lg:w-6/12 mx-6 rounded-lg py-4">
 				<div className="flex flex-col items-center justify-center gap-2">
 					<p className="text-2xl font-bold text-green-700">Login</p>
 				</div>
