@@ -10,7 +10,7 @@ const NavBar = () => {
 	const [nav, setNav] = useState(false);
 
     return (
-        <nav className=" xl:mx-[6rem] fixed z-30 w-full mx-auto mt-0 border-b bg-white ">
+        <nav className=" xl:mx-[6rem] z-30 w-full mx-auto mt-0 border-b bg-white ">
 		<div className=" flex flex-wrap items-center justify-between w-full py-0.5 px-0 mx-auto mt-0 bg-white">
 			<div className="flex items-center sm:pl-0">
 				<Link to="/">
@@ -25,7 +25,7 @@ const NavBar = () => {
 			<div className={`z-20 flex-grow ${!nav ? 'hidden' : 'flex'} w-full bg-white sm:bg-transparent overflow-hidden p-0 mt-4 lg:flex lg:items-center lg:w-auto lg:mt-0 lg:p-0`}
 				>
 				<div className="w-full divide-y divide-y-gray-100 lg:divide-y-0 flex lg:items-center flex-col
-					ml-0 xl:ml-10 lg:flex-row gap-x-0 gap-y-4 lg:gap-y-0 xl:gap-x-3.5 justify-center">
+					ml-0 xl:ml-10 lg:flex-row gap-x-0 gap-y-4 lg:gap-y-0 xl:gap-x-3 justify-center">
 					<div>
 						<button className="inline-flex relative peer xl:px-6 py-4 font-bold text-gray no-underline hover:text-green-500">
 							<Link to="/" className="flex items-center">Home <RiArrowDropDownLine size={30}/></Link>
@@ -50,10 +50,18 @@ const NavBar = () => {
 							href="#Projects">Income Expenditure 
 						</a>
 					</div>
+
 					<div>
-						<a className="inline-block px-6 py-4 font-bold text-gray no-underline lg:px-2 hover:text-green-500"
-							href="#About-Us">Projects</a>
+						<button className="inline-flex relative peer xl:px-6 py-4 font-bold text-gray no-underline hover:text-green-500">
+							<Link to="/" className="flex items-center">Project <RiArrowDropDownLine size={30}/></Link>
+						</button>
+						<ul className="peer-hover:flex absolute hover:flex flex-col bg-white drop-shadow-lg hidden pt-0 shadow text-gray">
+							<li className="text-left menu"><Link className="block py-2 pl-2 whitespace-no-wrap rounded-t px-2 hover:bg-green-700 hover:text-white" to="/project/food-for-all">Food for all</Link></li>
+							<li className="text-left menu"><Link className="block py-2 pl-2 text-left whitespace-no-wrap px-2 hover:bg-green-700 hover:text-white" to='/project/education'>Education</Link></li>
+							<li className="text-left menu"><Link className="block py-2 pl-2 text-left whitespace-no-wrap px-2 hover:bg-green-700 hover:text-white" to="/project/health">Health</Link></li>
+						</ul>
 					</div>
+
 					<div>
 						<a className="inline-block px-6 py-4 font-bold text-gray no-underline lg:px-2 hover:text-green-500"
 							href="#Contact">Gallery</a>
@@ -74,6 +82,11 @@ const NavBar = () => {
 						<Link className="inline-block px-6 py-4 font-bold text-gray no-underline lg:px-1 hover:text-green-500"
 							to="/login">
 							Login</Link>
+					</div>
+					<div>
+						<Link className="inline-block px-6 py-4 font-bold text-gray no-underline lg:px-1 hover:text-green-500"
+							to="/profile">
+							Profile</Link>
 					</div>
 				</div>
 			</div>
